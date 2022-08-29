@@ -31,6 +31,26 @@ const routes: Routes = [
     path: 'starwars',
     loadChildren: () => import('./pages/starwars/starwars.module').then( m => m.StarwarsPageModule)
   },
+  {
+    path: 'cards',
+    loadChildren: () => import('./pages/cards/cards.module').then( m => m.CardsPageModule)
+  },
+  {
+    path: 'checkbox',
+    loadChildren: () => import('./pages/checkbox/checkbox.module').then( m => m.CheckboxPageModule)
+  },
+  {
+    path: 'date-time',
+    loadChildren: () => import('./pages/date-time/date-time.module').then( m => m.DateTimePageModule)
+  },
+  {
+    path: 'grid',
+    loadChildren: () => import('./pages/grid/grid.module').then( m => m.GridPageModule)
+  },
+  {
+    path: 'infinite',
+    loadChildren: () => import('./pages/infinite/infinite.module').then( m => m.InfinitePageModule)
+  },
 ];
 
 @NgModule({

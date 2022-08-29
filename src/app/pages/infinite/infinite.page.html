@@ -1,0 +1,15 @@
+<app-header titulo="Infinite Scroll">
+  <!--Esto llama el header que tenemos
+    almacenado en components, para poder
+    llamarlo desde distintas páginas y 
+    facilitar futuras ediciones-->
+</app-header>
+
+
+<ion-content>
+    <ion-list>
+      <ion-item *ngFor="let item of data; let i = index;">
+        <ion-label>Item {{ i+1 }}</ion-label>
+      </ion-item>
+    </ion-list>
+</ion-content>

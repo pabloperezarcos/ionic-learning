@@ -27,7 +27,7 @@ export class HomePage implements OnInit {
       redirectTo: '/alert'
     },
     {
-      icon: 'person-circle',
+      icon: 'person-circle-outline',
       name: 'Avatar',
       redirectTo: '/avatar'
     },
@@ -35,6 +35,31 @@ export class HomePage implements OnInit {
       icon: 'enter-outline',
       name: 'Buttons',
       redirectTo: '/boton'
+    },
+    {
+      icon: 'card-outline',
+      name: 'Cards',
+      redirectTo: '/cards'
+    },
+    {
+      icon: 'checkbox-outline',
+      name: 'Checkboxs',
+      redirectTo: '/checkbox'
+    },
+    {
+      icon: 'calendar-outline',
+      name: 'Date Time',
+      redirectTo: '/date-time'
+    },
+    {
+      icon: 'grid-outline',
+      name: 'Grids',
+      redirectTo: '/grid'
+    },
+    {
+      icon: 'infinite-outline',
+      name: 'Infinite Scroll',
+      redirectTo: '/infinite'
     },
     {
       icon: 'game-controller-outline',

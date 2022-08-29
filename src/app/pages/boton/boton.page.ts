@@ -12,6 +12,8 @@ export class BotonPage implements OnInit {
   ngOnInit() {
   }
 
-  
+  onClick(){
+    
+  }
 
 }
