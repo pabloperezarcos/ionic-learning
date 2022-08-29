@@ -1,0 +1,7 @@
+{
+  "name": "sistemaNotas",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

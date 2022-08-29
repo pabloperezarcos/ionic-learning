@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>  <!-- el ngFor es para barrer el ion-item -->
+    <ion-item *ngFor="let c of components"
+                [routerLink]="c.redirectTo"> 
+       <!-- name esta entre [] para recibir el valor de c.icon (el icono del componente)-->
+      <ion-icon [name]="c.icon" slot="start" color="primary" ></ion-icon>
+      {{ c.name }}
+    </ion-item>
+  </ion-list>
+
+
+
+  <!-- Esta funcionalidad de botón fue reemplaza por el ION-LIST
+    
+          Botón para cambiarse de página hacia ALERT
+        <ion-button routerLink="/alert">
+          Alert
+        </ion-button>
+
+        Botón para cambiarse de página hacia ACTION SHEET
+        <ion-button routerLink="/action-sheet">
+          Action Sheet
+        </ion-button>
+  -->
+
+</ion-content>

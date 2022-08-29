@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Star Wars</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item *ngFor="let c of components" [routerLink]="c.wiki">
+      <ion-avatar slot="start">
+        <ion-img [src]="c.image"></ion-img>
+      </ion-avatar>
+      <ion-label>
+        <h2>{{ c.name }}</h2>
+        <h3>{{ c.homeworld }}</h3>
+        <h5>Más info en Wikipedia</h5>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+
+</ion-content>

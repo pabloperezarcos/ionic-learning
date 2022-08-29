@@ -1,0 +1,19 @@
+<app-header titulo="action sheet"> 
+  <!--Esto llama el header que tenemos
+    almacenado en components, para poder
+    llamarlo desde distintas páginas y 
+    facilitar futuras ediciones-->
+</app-header>
+
+
+
+<ion-content>
+  <!-- onClick() llama al proceso inicializado en el typeScript (.ts) -->
+  <!-- que en este caso la funcion asignada al boton es abrir -->
+  <!-- el componente ACTION-SHEET-->
+  <ion-button (click)="onClick()" expand="block" class="ion-padding">
+    Mostrar Action Sheet
+  </ion-button>
+
+
+</ion-content>

@@ -1,0 +1,19 @@
+<app-header titulo="alert"> 
+  <!--Esto llama el header que tenemos
+    almacenado en components, para poder
+    llamarlo desde distintas páginas y 
+    facilitar futuras ediciones-->
+</app-header>
+
+<ion-content class="ion-padding">
+
+  <ion-button (click)="presentAlert()" expand="block">
+    Click me
+  </ion-button>
+
+  <ion-button (click)="presentAlertMultipleButtons()" expand="block">
+    Multiple botones
+  </ion-button>
+
+
+</ion-content>
