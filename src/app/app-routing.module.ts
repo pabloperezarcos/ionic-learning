@@ -51,6 +51,26 @@ const routes: Routes = [
     path: 'infinite',
     loadChildren: () => import('./pages/infinite/infinite.module').then( m => m.InfinitePageModule)
   },
+  {
+    path: 'input',
+    loadChildren: () => import('./pages/input/input.module').then( m => m.InputPageModule)
+  },
+  {
+    path: 'list',
+    loadChildren: () => import('./pages/list/list.module').then( m => m.ListPageModule)
+  },
+  {
+    path: 'list-reorder',
+    loadChildren: () => import('./pages/list-reorder/list-reorder.module').then( m => m.ListReorderPageModule)
+  },
+  {
+    path: 'modal',
+    loadChildren: () => import('./pages/modal/modal.module').then( m => m.ModalPageModule)
+  },
+  {
+    path: 'modal-info',
+    loadChildren: () => import('./pages/modal-info/modal-info.module').then( m => m.ModalInfoPageModule)
+  },
 ];
 
 @NgModule({

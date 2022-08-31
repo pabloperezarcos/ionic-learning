@@ -1,16 +1,22 @@
-<ion-header>
+<ion-header translucent>
   <ion-toolbar>
-    <ion-title>Inicio</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-menu-button menu="first" color="primary"></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title>Componentes</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
-  <ion-list>  <!-- el ngFor es para barrer el ion-item -->
-    <ion-item *ngFor="let c of components"
-                [routerLink]="c.redirectTo"> 
-       <!-- name esta entre [] para recibir el valor de c.icon (el icono del componente)-->
-      <ion-icon [name]="c.icon" slot="start" color="primary" ></ion-icon>
+  <ion-list>
+    <!-- el ngFor es para barrer el ion-item -->
+    <ion-item *ngFor="let c of components | async" 
+                [routerLink]="c.redirectTo" detail>
+      <!-- name esta entre [] para recibir el valor de c.icon (el icono del componente)-->
+      <ion-icon [name]="c.icon" slot="start" color="primary"></ion-icon>
       {{ c.name }}
     </ion-item>
   </ion-list>
