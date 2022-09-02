@@ -12,18 +12,17 @@
 
 <ion-content>
 
-  <ion-list>
-    <ion-item *ngFor="let c of components" [routerLink]="c.wiki">
+  <ion-list *ngIf="components">
+    <ion-item *ngFor='let componente of components'>
       <ion-avatar slot="start">
-        <ion-img [src]="c.image"></ion-img>
+        <img [src]='componente.image' alt="img">
       </ion-avatar>
       <ion-label>
-        <h2>{{ c.name }}</h2>
-        <h3>{{ c.homeworld }}</h3>
-        <h5>Más info en Wikipedia</h5>
+        <h2>{{ componente.name }}</h2>
+        <h3>{{ componente.homeworld }}</h3>
       </ion-label>
+      <ion-icon name="arrow-forward" (click)="goToDetalles(componente)"></ion-icon>
     </ion-item>
   </ion-list>
-
 
 </ion-content>

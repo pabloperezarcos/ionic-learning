@@ -90,6 +90,11 @@
     "redirectTo": "/segment"
   },
   {
+    "icon": "albums-outline",
+    "name": "Slides",
+    "redirectTo": "/slides"
+  },
+  {
     "icon": "game-controller-outline",
     "name": "Star Wars Duoc UC",
     "redirectTo": "/starwars"

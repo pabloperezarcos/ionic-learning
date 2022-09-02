@@ -1,0 +1,26 @@
+<app-header titulo="Cards DUOC UC">
+  <!--Esto llama el header que tenemos
+    almacenado en components, para poder
+    llamarlo desde distintas páginas y 
+    facilitar futuras ediciones-->
+</app-header>
+
+<ion-content>
+
+  <!--INICIO DE CARD-->
+  <ion-card>
+    <img [src]="componente.image" alt="personaje">
+    <ion-card-header>
+      <ion-card-subtitle>{{componente.homeworld}}</ion-card-subtitle>
+      <ion-card-title>{{componente.name}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Más información en
+      <i>{{componente.wiki}}</i>
+    </ion-card-content>
+  </ion-card>
+
+
+
+</ion-content>

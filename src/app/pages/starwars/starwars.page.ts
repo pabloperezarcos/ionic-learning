@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationExtras } from '@angular/router';
+import { NavController } from '@ionic/angular';
 
 //Creamos una interface para usarla en distintos arreglos.
 interface Componente {
@@ -93,9 +95,21 @@ export class StarwarsPage implements OnInit {
   ];
 
 
-  constructor() { }
+  constructor(public navCtrl: NavController) {
+  }
+
+  goToDetalles(componente: any) {
+    const navigationExtras: NavigationExtras = {
+      queryParams: {
+        personaje: JSON.stringify(componente)
+      }
+    };
+    this.navCtrl.navigateForward(['cards-duoc/'], navigationExtras)
+
+  };
 
   ngOnInit() {
+
   }
 
 }

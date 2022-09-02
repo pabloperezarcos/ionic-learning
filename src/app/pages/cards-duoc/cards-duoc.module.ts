@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { StarwarsPageRoutingModule } from './starwars-routing.module';
+import { CardsDuocPageRoutingModule } from './cards-duoc-routing.module';
 
-import { StarwarsPage } from './starwars.page';
+import { CardsDuocPage } from './cards-duoc.page';
 import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
@@ -14,9 +14,9 @@ import { ComponentsModule } from 'src/app/components/components.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    StarwarsPageRoutingModule,
+    CardsDuocPageRoutingModule,
     ComponentsModule
   ],
-  declarations: [StarwarsPage]
+  declarations: [CardsDuocPage]
 })
-export class StarwarsPageModule {}
+export class CardsDuocPageModule {}
